@@ -31,8 +31,8 @@ public class StatusTwitter {
         
         Twitter mitwitter = new TwitterFactory().getInstance();
 
-        Query query = new Query("#Cangas");
-        QueryResult result = mitwitter.search(query);
+        Query queryy = new Query("#Vigo");
+        QueryResult result = mitwitter.search(queryy);
         for (Status status : result.getTweets()) {
             System.out.println("@" + status.getUser().getScreenName() + ":" + status.getText());
         }
